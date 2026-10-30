@@ -1,6 +1,6 @@
 ---
 name: hestana-gtd
-description: Plan and execute work in a Hestana Space that uses Getting Things Done (GTD) - capture to an Inbox, clarify, organize into Next actions, Waiting for, Someday/maybe and projects, run the weekly review, and take, do and hand off next actions. Use when the Space's methodology is gtd, when the person asks for GTD in Hestana, or to learn which methodology a Space uses. Optional: Hestana works without it.
+description: Plan and execute work in a Hestana Space that uses Getting Things Done (GTD) - capture to an Inbox, clarify, organize into Next actions, Waiting for, Someday/maybe and projects, run the weekly review, and take, do and hand off next actions. Use when the Space's methodology is gtd, when the person asks for GTD in Hestana, or to learn which methodology a Space uses. Optional, since Hestana works without it.
 metadata:
   version: "0.1.0"
   methodology: "gtd"
