@@ -24,7 +24,7 @@ Review and Waiting share a state, so they are told apart by their code and by me
 - **Limit work in progress.** The Space owner declares the limit (for example "In progress: N", or "each person holds at most N cards in In progress"). Hestana holds no limit and will not stop anyone. Before pulling, count the cards in the column or held by you. At the limit, finish or unblock instead; say so in a comment on the oldest card in that column and help it forward. No limit declared: ask the owner for one; do not invent a number.
 - **Finish before you start.** Prefer moving a Review card to Done (when it is yours to move) or unblocking a Waiting one over pulling.
 - **Expedite is an exception, not a column.** The owner raises priority; say in a comment why a card jumped. The limit still holds unless the Space says otherwise.
-- **Review the board each session.** Stale In progress cards (deadline passed, no recent note) are released or re-planned.
+- **Review the board each session.** Stale In progress cards (deadline passed, no recent note): release or re-plan only your own; for another worker's card, comment and mention the holder or the owner, and change nothing unless a person told you to.
 
 ## A card
 

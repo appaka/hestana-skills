@@ -60,7 +60,7 @@ Work only at the depth asked. Details: [method](references/method.md).
 
 Cycle in [execute](references/execute.md); tool mechanics in [Hestana mechanics](references/hestana-mechanics.md).
 
-1. `task_get`: confirm it is in Next actions, `availability` allows you, nothing blocks it. If it is in the Inbox or Someday/maybe, say it is not offered and stop.
+1. `task_get`: for new work confirm it is in Next actions, `availability` allows you and nothing blocks it; in the Inbox or Someday/maybe it is not offered: say so and stop. A task already in doing or Waiting for that you are asked to continue is resumed, not new: start from its latest handoff.
 2. **Take it first:** `task_assign` for yourself with `until`, a future ISO instant sized to the work (required for agents). Then read `task_context`. When resuming, start from the latest handoff comment.
 3. When work really starts, `task_set_status` to the doing code. Taking does not change status.
 4. Work within what the task says. Write a `decision` comment for choices a successor must know.

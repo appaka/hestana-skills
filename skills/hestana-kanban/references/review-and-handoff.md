@@ -8,9 +8,9 @@ To send a card to Review:
 
 1. Record in the closing `result` (or a comment): what was done; artifacts, commits, documents with versions; each check with its outcome, failures and unrun checks included. A plan to check is not evidence.
 2. Keep the claims apart: implementation done, checks passed, result accepted, change released. Claim only what your evidence supports. A review by someone other than you is never yours to record; leave it open and name who could do it.
-3. Write the handoff (below) with the evidence and the decision needed.
-4. `task_set_status` to the Review `code` with `expectedVersion`.
-5. Assign the card to the owner: `task_assign` with `assignee: {type: 'HUMAN', id: <ownerUserId>}`. Assignment does not change the accountable owner. If your own reservation or the card's availability stands in the way, release first; widening availability for this one handover is the change the model expects, so name it in the handoff.
+3. `task_set_status` to the Review `code` with `expectedVersion`.
+4. Write the handoff (below) after the status change, with the state the server returned and the evidence and the decision needed.
+5. Assign the card to the owner: `task_assign` with `assignee: {type: 'HUMAN', id: <ownerUserId>}`. Assignment does not change the accountable owner. If the assignment is refused, add one line to the handoff comment (or a new comment) saying who holds the card now. If your own reservation or the card's availability stands in the way of assigning it to the owner, release first and ask a person (a mention that awaits an answer) to take it or to widen availability: only a person widens availability, never you. The handoff names the owner and the review needed.
 
 The server neither parks nor approves anything by itself. Closing as Done is for the owner; failed work ends as Canceled with the reason in the result and the handoff. Closing every child never accepts the parent.
 
@@ -25,7 +25,7 @@ Choose the right route: information or a decision from a person is a mention; re
 Leave one on every exit: finished to Review, paused, waiting, released, expired, handed over, canceled. Use `notes_add` on the card with `label: 'handoff'`. It is the first thing the next worker reads, so it stands alone. Cover:
 
 - **State:** what exists and what remains; the last observed status code and assignment.
-- **Agreement:** the card's `headVersion` and requirements worked against; decisions relied on; methodology `kanban 0.1.0` as read from `spaces_get`.
+- **Agreement:** the card's `headVersion` and requirements worked against; decisions relied on; methodology and version exactly as `spaces_get` returned them (`kanban <version>`, or none).
 - **Evidence:** commits, documents (with versions), links; each check with its outcome, failed and unrun ones included.
 - **Questions and blockers:** open mentions (recipient, what depends on it), `blockedBy`, missing checks and who could provide them; "none" if none.
 - **Coordination:** closed, released, handed to a named principal, or retained until an explicit instant.

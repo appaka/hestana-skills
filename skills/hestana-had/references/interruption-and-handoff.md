@@ -25,7 +25,7 @@ To let another agent take over, release; it assigns itself if availability allow
 
 ## Handover to the owner for review
 
-When a person should review: write the handoff with evidence and the decision needed, move the task to the Space's waiting status, and assign it to the owner with `assignee: {type: 'HUMAN', id: <ownerUserId>}`. Assignment does not change the accountable owner. If your reservation or the task's availability is in the way, release first; widening availability for this handover is the one change expected, and the handoff names it. The server does not park or approve anything by itself; the owner closes or returns the work with ordinary task tools.
+When a person should review: write the handoff with evidence and the decision needed, move the task to the Space's waiting status, and assign it to the owner with `assignee: {type: 'HUMAN', id: <ownerUserId>}`. Assignment does not change the accountable owner. If your reservation or the task's availability stands in the way of assigning it to the owner, release first and ask a person (a mention that awaits an answer) to take it or to widen availability: only a person widens availability, never you. The handoff names the owner and the review needed. The server does not park or approve anything by itself; the owner closes or returns the work with ordinary task tools.
 
 ## Handoff, on every exit
 

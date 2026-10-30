@@ -56,7 +56,7 @@ Use when asked to plan, break down, capture or save work. Detail: [planning](ref
 
 Detail: [review and handoff](references/review-and-handoff.md).
 
-1. **Look.** Skim the board at session start: stale cards in In progress (deadline passed, no recent note) are released or re-planned, not left looking busy. Finish before you start: prefer moving a Review card forward over pulling a new one.
+1. **Look.** Skim the board at session start: stale cards in In progress (deadline passed, no recent note) are not left looking busy: release or re-plan only your own; for someone else's, comment and mention the holder or the owner (awaiting an answer), and never release or re-plan it unless a person told you to. Finish before you start: prefer moving a Review card forward over pulling a new one.
 2. **Check capacity** against the declared limit. At the limit, do not pull; finish or unblock instead, and say so on the oldest card of that column.
 3. **Pull one card.** `task_next` suggests takeable work and reserves nothing; `null` means nothing is eligible for you. Take it with `task_assign` (omit `assignee` for yourself) **with `until`**, a future ISO instant sized to the work, before you change anything. Renew with a later `until` for long work. Taking does not change the status.
 4. **Read it.** `task_context` with only `taskId` right after every assignment; when resuming, start from the latest handoff, and read the comments (`notes_list`) before writing.
