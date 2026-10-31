@@ -19,7 +19,7 @@ Use the Hestana connection whose server instructions (or `spaces_list`) list the
 | `methodology` | What to do |
 |---|---|
 | `id` is `human-agent-development` | Apply this method. If `version` differs from 0.7.0, tell the person once, in one line, and carry on. |
-| another `id` | Do not apply HAD rules. Tell the person the Space uses that methodology and name its `skill` (if not null); `summary` says what is expected. Work with Hestana's tools and the summary. |
+| another `id` | Do not apply HAD rules. Tell the person the Space uses that methodology and name its `skill` (if not null); `summary` says what is expected. Work with Hestana's tools and the summary: not applying HAD is not a reason to stop, and the work never waits on installing another skill. |
 | `null` | The Space has none. Propose HAD if it fits (people and agents on shared tasks) and ask. You cannot choose it: only the Space owner does, in the app. If the person wants HAD for this work anyway, you may use it and say it is not the Space's setting. |
 | field absent / call fails | Say the Space's methodology is unknown, ask the person, continue. |
 
@@ -49,7 +49,7 @@ Details and the delegation rules: [responsibilities and authority](references/re
 ## 4. Planning
 
 1. Recover first: search related briefs, plans, decisions and tasks (`files_list`, `task_list` paged over the whole Space, then `task_get`). If a task already records the request, reuse it; do not create a second one.
-2. Clarify as above. Brief with the [feature brief](templates/feature-brief.md); a small fix uses the [small fix](templates/small-fix.md) template; research the [research](templates/research.md) template.
+2. Clarify as above, and ask **exactly one question at a time**: one comment that mentions the person and awaits an answer. Any other open item goes in the report as a note with the default you assumed, and is asked only after the first is answered. Brief with the [feature brief](templates/feature-brief.md); a small fix uses the [small fix](templates/small-fix.md) template; research the [research](templates/research.md) template.
 3. Plan the next understood slice; each executable unit uses the [executable work](templates/executable-work.md) template. Review the plan against the next activity: [planning](references/planning.md).
 4. Save only when asked, as backlog tasks (give a backlog status code, otherwise the task lands open and is offered at once), with `ownerUserId`, a checklist of observable outcomes, and prerequisites only where a unit truly needs another's output.
 5. Show the accountable person what was saved. Offer (open status) only on their word or within a delegation you have read and cite.
